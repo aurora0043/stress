@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>心理壓力減緩工具箱</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">心理壓力減緩工具箱</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="article.html">Articles</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Methods</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>  //
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>探索自己 × 緩解情緒</h1>
+                            <h6 class="post-subtitle">從混亂中抽離，煩惱也會變小，深呼吸一下，世界就沒那麼可怕用白噪音、呼吸與陪伴，找到自己的平靜，一點聲音，一口呼吸，讓日常慢下來</h6>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <!-- 原本文章內容保留 -->
+                        <p>有時候我們只是需要一點點空白。關掉訊息、放下社群，靜靜聽一段白噪音，跟著呼吸慢慢來，一切都會變得沒那麼混亂。</p>
+                        <p>世界很吵，但你不需要一直在線上。閉上眼，聽著耳機裡的微微雨聲，身體會告訴你：其實你已經撐很久了。</p>
+                        <p>不要急著好起來，也不用急著成為誰眼中的完美樣子。你只需要給自己一點時間，一點聲音，一口呼吸。</p>
+                        <p>讓我們一起練習：慢一點、輕一點、溫柔一點。</p>
+
+                        <!-- ===== 新增：白噪音播放器 ===== -->
+                        <hr />
+                        <h2 class="text-center">白噪音放鬆一下</h2>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <!-- 卡片 1：雨聲 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100 text-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title">🌧️雨聲</h5>
+                                            <audio id="rain" class="w-100">
+                                                <source src="assets/audio/rain.wav" type="audio/wav">
+                                                Your browser does not support the audio element.
+                                            </audio>
+                                            <button class="btn btn-success mt-2" onclick="document.getElementById('rain').play()">▶️ 播放</button>
+                                            <button class="btn btn-danger mt-2" onclick="document.getElementById('rain').pause()">⏸️ 暫停</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 卡片 2：風聲 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100 text-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title">🌊海浪聲</h5>
+                                            <audio id="wind" class="w-100">
+                                                <source src="assets/audio/wave.mp3" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                            </audio>
+                                            <button class="btn btn-success mt-2" onclick="document.getElementById('wind').play()">▶️ 播放</button>
+                                            <button class="btn btn-danger mt-2" onclick="document.getElementById('wind').pause()">⏸️ 暫停</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 卡片 3：咖啡廳 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card shadow-sm h-100 text-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title">🍃風聲</h5>
+                                            <audio id="cafe" class="w-100">
+                                                <source src="assets/audio/wind.wav" type="audio/wav">
+                                                Your browser does not support the audio element.
+                                            </audio>
+                                            <button class="btn btn-success mt-2" onclick="document.getElementById('cafe').play()">▶️ 播放</button>
+                                            <button class="btn btn-danger mt-2" onclick="document.getElementById('cafe').pause()">⏸️ 暫停</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- ===== 新增：呼吸影片 ===== -->
+                       <!-- ===== 新版：動畫呼吸圈 ===== -->
+                        <!-- ===== 呼吸圈動畫區塊：位置微調版 ===== -->
+                        <h2 class="text-center">跟著呼吸圈調節呼吸</h2>
+                        <div class="d-flex flex-column align-items-center mb-4" style="margin-top: 30px;">
+                          <div id="breathing-circle" style="width: 150px; height: 150px; background-color: #a0d8ef; border-radius: 50%; box-shadow: 0 0 20px rgba(160, 216, 239, 0.6); transition: transform 2s ease-in-out;"></div>
+                          <p id="breath-text" class="mt-3 fs-4 fw-bold text-secondary">吸氣</p>
+                        </div>
+
+                        <script>
+                        const circle = document.getElementById("breathing-circle");
+                        const text = document.getElementById("breath-text");
+
+                        const states = [
+                          { label: "吸氣", scale: 1.4 },
+                          { label: "停留", scale: 1.4 },
+                          { label: "呼氣", scale: 0.8 },
+                          { label: "停留", scale: 0.8 }
+                        ];
+
+                        let index = 0;
+
+                        function updateBreath() {
+                          const state = states[index];
+                          text.textContent = state.label;
+                          circle.style.transform = `scale(${state.scale})`;
+
+                          index = (index + 1) % states.length;
+                        }
+
+                        // 一開始就執行一次
+                        updateBreath();
+                        // 然後每 2 秒執行一次，保持節奏同步
+                        setInterval(updateBreath, 2000);
+                        </script>
+
+
+                        <!-- ===== 新增：推薦 Box 區塊 ===== -->
+                        <h2 class="text-center">推薦你也可以試試</h2>
+                        <div class="row text-center">
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="assets/img/headphones.png" class="card-img-top" alt="Headphones">
+                                    <div class="card-body">
+                                        <h5 class="card-title">戴上耳機</h5>
+                                        <h8 class="card-text">專注沉浸自己的世界。</h8>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="assets/img/exercise.png" class="card-img-top" alt="Exercise">
+                                    <div class="card-body">
+                                        <h5 class="card-title">動一動</h5>
+                                        <h8 class="card-text">流汗釋放壓力，心情也跟著輕了起來。</h8>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="assets/img/notebook.png" class="card-img-top" alt="notebook">
+                                    <div class="card-body">
+                                        <h5 class="card-title">寫下心情</h5>
+                                        <h8 class="card-text">腦袋放空，寫出情緒的出口。</h8>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ===== 結束新增區塊 ===== -->
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="small text-center text-muted fst-italic">
+                            Copyright &copy; ꒰ঌ 內心防火牆 ໒꒱
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
