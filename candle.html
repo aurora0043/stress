@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>心理壓力減緩工具箱</title>
+  <title>心理壓力減緩工具箱 - 香薰療法</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" />
+  <!-- 自訂樣式 -->
   <style>
+    {
+      font-family: 'Open Sans', 'Lora', serif !important;
+    }
     body {
-      font-family: 'Noto Serif TC', serif;
-      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #fff;
+      color: #333;
     }
     .navbar {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 10;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand {
+      font-family: 'Lora', serif;
+      font-weight: bold;
+    }
+    .nav-link {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      color: #333 !important;
+    }
+    .nav-link:hover {
+      color: #6c757d !important;
     }
     .masthead, .image-block {
       height: 600px;
@@ -33,114 +52,149 @@
       transform: translate(-50%, -50%);
       color: white;
       text-align: center;
-      text-shadow:
-        2px 2px 8px rgba(0, 0, 0, 0.8),
-        0 0 5px rgba(0, 0, 0, 0.7);
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
       max-width: 90%;
     }
     .overlay-text h1, .overlay-text h2 {
       font-weight: 700;
-      margin: 0;
+      font-family: 'Lora', serif;
     }
     .overlay-text .subheading {
       font-weight: 400;
-      font-size: 1.5rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.3rem;
       margin-top: 10px;
     }
     footer {
-      background-color: #343a40;
-      color: white;
+      background-color: #f8f9fa;
+      color: #6c757d;
       padding: 2rem 0;
       text-align: center;
     }
     footer a {
-      color: #f8f9fa;
+      color: #6c757d;
       margin: 0 10px;
     }
     footer a:hover {
-      color: #adb5bd;
+      color: #343a40;
     }
   </style>
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="index.html">心理壓力減緩工具箱</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="article.html">Articles</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Methods</a></li>
-                <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="candle.html">Scent</a></li> 
-            </ul>
-        </div>
+      <a class="navbar-brand" href="index.html">心理壓力減緩工具箱</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+        Menu <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto py-4 py-lg-0">
+          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="article.html">Articles</a></li>
+          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Methods</a></li>
+          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="candle.html">Scent</a></li>
+        </ul>
+      </div>
     </div>
-</nav>
-
+  </nav>
 
   <!-- Header -->
   <header class="masthead" style="background-image: url('assets/img/phpjnGlrt.jpg');">
     <div class="container h-100 d-flex justify-content-center align-items-center">
       <div class="overlay-text">
         <h1>香薰療法</h1>
-        <p class="subheading">你想嘗試用精油來提升自己的身心健康嗎？到底芳香療法能帶來哪些功效，又該如何挑選合適的精油？</p>
+        <p class="subheading">你想嘗試用精油來提升自己的身心健康嗎？探索香氣的療癒力量 🌿</p>
       </div>
     </div>
   </header>
 
-  <!-- 圖片區塊 -->
+  <!-- 香氛選擇器 -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">🌿 香氛推薦小幫手 🌿</h2>
+    <p class="text-center mb-3">請選擇你目前的狀態，我們將推薦對應香氣</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <select id="moodSelector" class="form-select form-select-lg mb-3">
+          <option selected disabled>請選擇你的狀態...</option>
+          <option value="stress">我很有壓力</option>
+          <option value="tired">我覺得疲憊</option>
+          <option value="anxious">我很焦慮</option>
+          <option value="sleep">我想幫助入眠</option>
+          <option value="focus">我需要集中注意力</option>
+        </select>
+        <div id="scentResult" class="alert alert-info mt-4 text-center" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Blocks -->
   <div class="container-fluid px-0">
     <div class="image-block" style="background-image: url('assets/img/amazing-lavender-flower-field-provence-france-field-lavender-summer-background1000800.jpg');">
-      <div class="overlay-text"><h2>薰衣草</h2><p class="subheading">具有鎮靜、抗焦慮特性，有助睡眠與舒緩壓力。</p></div>
+      <div class="overlay-text"><h2>薰衣草</h2><p class="subheading">鎮靜情緒，有助睡眠與舒緩壓力。</p></div>
     </div>
     <div class="image-block" style="background-image: url('assets/img/quality,Q_85.jpeg');">
-      <div class="overlay-text"><h2>佛手柑</h2><p class="subheading">帶有甘甜花香，具有安撫與抗菌效果。</p></div>
+      <div class="overlay-text"><h2>佛手柑</h2><p class="subheading">花果香氣，安撫情緒，具抗菌效果。</p></div>
     </div>
     <div class="image-block" style="background-image: url('assets/img/aaaaaaaa.jpg');">
-      <div class="overlay-text"><h2>甜橙</h2><p class="subheading">清新提神、減壓、促進消化與免疫力。</p></div>
+      <div class="overlay-text"><h2>甜橙</h2><p class="subheading">清新提神、緩解壓力、促進消化。</p></div>
     </div>
     <div class="image-block" style="background-image: url('assets/img/9813dc48-3ee9-45e3-8b5e-c2cdf663b94a.jpg');">
-      <div class="overlay-text"><h2>乳香</h2><p class="subheading">舒緩情緒與壓力，改善皮膚彈性與光澤。</p></div>
+      <div class="overlay-text"><h2>乳香</h2><p class="subheading">放鬆身心、改善皮膚彈性。</p></div>
     </div>
     <div class="image-block" style="background-image: url('assets/img/800x.jpg');">
-      <div class="overlay-text"><h2>洋甘菊</h2><p class="subheading">改善睡眠、緩解焦慮並舒緩敏感肌膚。</p></div>
+      <div class="overlay-text"><h2>洋甘菊</h2><p class="subheading">助眠、舒緩敏感肌與焦慮。</p></div>
     </div>
     <div class="image-block" style="background-image: url('assets/img/20160726floraemma003.jpg');">
       <div class="overlay-text"><h2>薄荷</h2><p class="subheading">提神醒腦、緩解頭痛與消化不適。</p></div>
     </div>
     <div class="image-block" style="background-image: url('assets/img/banner-01.jpg');">
-      <div class="overlay-text"><h2>尤加利</h2><p class="subheading">清潔呼吸道、提神與淨化空氣。</p></div>
+      <div class="overlay-text"><h2>尤加利</h2><p class="subheading">清新呼吸道，淨化空氣。</p></div>
     </div>
     <div class="image-block" style="background-image: url('assets/img/fresh-ginger-root-sliced-wooden-table1000800 (2).jpg');">
-      <div class="overlay-text"><h2>薑油</h2><p class="subheading">提升免疫、舒緩焦慮與肌肉疼痛。</p></div>
+      <div class="overlay-text"><h2>薑油</h2><p class="subheading">提升免疫、舒緩身體疼痛。</p></div>
     </div>
     <div class="image-block" style="background-image: url('assets/img/unnamed.jpg');">
-      <div class="overlay-text"><h2>茶樹</h2><p class="subheading">抗菌消炎，適合處理痘痘與皮膚問題。</p></div>
+      <div class="overlay-text"><h2>茶樹</h2><p class="subheading">抗菌抗痘，呵護肌膚。</p></div>
     </div>
     <div class="image-block" style="background-image: url('assets/img/GetImg.jpg');">
-      <div class="overlay-text"><h2>葡萄柚</h2><p class="subheading">提升情緒、護膚、促進消化。</p></div>
+      <div class="overlay-text"><h2>葡萄柚</h2><p class="subheading">振奮情緒、促進代謝。</p></div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="border-top">
     <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <div class="small text-center text-muted fst-italic">
-                    Copyright &copy; ꒰ঌ 內心防火牆 ໒꒱
-                </div>
-            </div>
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="small text-center text-muted fst-italic">
+            Copyright &copy; ꒰ঌ 內心防火牆 ໒꒱
+          </div>
         </div>
+      </div>
     </div>
-</footer> 
+  </footer>
 
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const moodSelector = document.getElementById('moodSelector');
+    const scentResult = document.getElementById('scentResult');
+
+    const scentSuggestions = {
+      stress: "推薦：<strong>薰衣草、佛手柑</strong><br>功效：幫助放鬆、舒緩壓力。",
+      tired: "推薦：<strong>薄荷、迷迭香</strong><br>功效：提神醒腦，提升活力。",
+      anxious: "推薦：<strong>洋甘菊、乳香</strong><br>功效：安定情緒，舒緩焦慮。",
+      sleep: "推薦：<strong>薰衣草、洋甘菊</strong><br>功效：幫助入眠，放鬆神經。",
+      focus: "推薦：<strong>尤加利、檸檬</strong><br>功效：提神專注、清新思緒。"
+    };
+
+    moodSelector.addEventListener('change', () => {
+      const selectedMood = moodSelector.value;
+      scentResult.innerHTML = scentSuggestions[selectedMood];
+      scentResult.style.display = 'block';
+    });
+  </script>
 </body>
 </html>
